@@ -3,10 +3,13 @@ package cm.spring;
 public class MainApp {
     public static void main(String[] args) {
 
-        Football football  = new Football();
-        football.start();
+        Sport sport = new Volleyball();
+        sport.start();
 
-        Basketball basketball = new Basketball();
-        basketball.start();
+//        Football football  = new Football();
+//        football.start();
+//
+//        Basketball basketball = new Basketball();
+//        basketball.start();
     }
 }

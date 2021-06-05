@@ -1,8 +1,9 @@
 package cm.spring;
 
-public class Volleyball {
+public class Volleyball implements Sport{
 
-    public void start(){
+
+    public void start() {
         System.out.println(" Start VolleyBball");
     }
 }
