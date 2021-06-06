@@ -5,8 +5,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
     public static void main(String[] args) {
+//        ClassPathXmlApplicationContext appCon = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        Master master = appCon.getBean("master", Master.class);
+//        master.start();
+
         ClassPathXmlApplicationContext appCon = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Master master = appCon.getBean("master", Master.class);
-        master.start();
+        Sport sport = appCon.getBean("sportImpl", Sport.class);
+        sport.mySport();
+        appCon.close();
     }
 }

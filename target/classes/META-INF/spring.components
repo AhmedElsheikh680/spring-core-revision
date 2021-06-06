@@ -1,1 +1,2 @@
 cm.spring.annotation.MasterImpl=org.springframework.stereotype.Component
+cm.spring.annotation.SportImpl=org.springframework.stereotype.Component
