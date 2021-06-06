@@ -1,7 +1,10 @@
 package cm.spring.annotation;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student implements Company{
-    public void start() {
-        System.out.println(" I'm Student");
+    public void test() {
+        System.out.println("I'm Student");
     }
 }

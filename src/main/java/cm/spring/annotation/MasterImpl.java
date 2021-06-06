@@ -2,20 +2,25 @@ package cm.spring.annotation;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("master")
 public class MasterImpl implements Master{
 
-    @Autowired
-    private Sport sport;
+//    @Autowired
+//    private Sport sport;
 
+
+    @Autowired
+    @Qualifier("user")
     private Company company;
 
-    @Autowired
-    public void setCompany(Company company) {
-        this.company = company;
-    }
+//   @Autowired
+//
+//    public void setCompany(Company company) {
+//        this.company = company;
+//    }
     //    @Autowired
 ////    public MasterImpl(Sport sport) {
 ////        this.sport = sport;
@@ -31,10 +36,10 @@ public class MasterImpl implements Master{
     }
 
     public void name() {
-        this.company.start();
+        company.test();
     }
 
     public void callMySport() {
-        this.sport.mySport();
+//        this.sport.mySport();
     }
 }
