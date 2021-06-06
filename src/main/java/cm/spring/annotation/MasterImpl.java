@@ -7,12 +7,18 @@ import org.springframework.stereotype.Component;
 @Component("master")
 public class MasterImpl implements Master{
 
+    @Autowired
     private Sport sport;
 
-    @Autowired
-    public MasterImpl(Sport sport) {
-        this.sport = sport;
-    }
+//    @Autowired
+////    public MasterImpl(Sport sport) {
+////        this.sport = sport;
+////    }
+
+//    @Autowired
+//    public void setSport(Sport sport) {
+//        this.sport = sport;
+//    }
 
     public void start() {
         System.out.println("I'm Maaster");
