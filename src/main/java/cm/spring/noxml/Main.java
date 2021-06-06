@@ -6,8 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext appCon = new AnnotationConfigApplicationContext(SpringConfiguration.class);
-        Master master = appCon.getBean("masterImpl", Master.class);
+        Master master = appCon.getBean("myMaster", Master.class);
         master.name();
         master.callMySport();
+
+        appCon.close();
     }
 }

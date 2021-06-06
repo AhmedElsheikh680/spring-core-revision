@@ -4,14 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MasterImpl implements Master {
 
-    @Autowired
-    @Qualifier("football")
+//    @Autowired
+//    @Qualifier("football")
     private Sport sport;
 
-//    @Autowired
+    public MasterImpl(Sport sport) {
+        this.sport = sport;
+    }
+    //    @Autowired
 //    public MasterImpl(Sport sport) {
 //        this.sport = sport;
 //    }
