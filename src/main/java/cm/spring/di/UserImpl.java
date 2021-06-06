@@ -36,4 +36,11 @@ public class UserImpl implements User {
     public void getPerson(){
         this.person.start();
     }
+
+    public void doInit(){
+        System.out.println("Start");
+    }
+    public void doDestroy(){
+        System.out.println("Destroy");
+    }
 }

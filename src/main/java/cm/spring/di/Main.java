@@ -12,10 +12,10 @@ public class Main {
 
         ClassPathXmlApplicationContext appCon = new ClassPathXmlApplicationContext("applicationContext.xml");
         User user = appCon.getBean("myUser", User.class);
-        User user2 = appCon.getBean("myUser", User.class);
-        System.out.println(user);
-        System.out.println(user2);
-        System.out.println(user == user2);
+//        User user2 = appCon.getBean("myUser", User.class);
+//        System.out.println(user);
+//        System.out.println(user2);
+//        System.out.println(user == user2);
         System.out.println(user.getEmail());
         System.out.println(user.getTeam());
 
