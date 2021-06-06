@@ -1,4 +1,4 @@
-package cm.spring;
+package cm.spring.ioc;
 
 public class Volleyball implements Sport{
 
