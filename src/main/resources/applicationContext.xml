@@ -14,7 +14,7 @@
 <!--    </bean>-->
 
 
-    <bean id="myUser" class="cm.spring.di.UserImpl">
+    <bean id="myUser" class="cm.spring.di.UserImpl" scope="prototype">
         <property name="person" ref="myPerson"></property>
         <property name="email" value="${user.email}"></property>
         <property name="team" value="${user.team}"></property>
