@@ -10,7 +10,13 @@ public class MasterImpl implements Master{
     @Autowired
     private Sport sport;
 
-//    @Autowired
+    private Company company;
+
+    @Autowired
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+    //    @Autowired
 ////    public MasterImpl(Sport sport) {
 ////        this.sport = sport;
 ////    }
@@ -22,6 +28,10 @@ public class MasterImpl implements Master{
 
     public void start() {
         System.out.println("I'm Maaster");
+    }
+
+    public void name() {
+        this.company.start();
     }
 
     public void callMySport() {

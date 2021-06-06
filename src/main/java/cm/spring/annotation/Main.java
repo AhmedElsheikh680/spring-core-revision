@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext appCon = new ClassPathXmlApplicationContext("applicationContext.xml");
         Master master = appCon.getBean("master", Master.class);
-        master.callMySport();
+        master.name();
 
 //        ClassPathXmlApplicationContext appCon = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        Sport sport = appCon.getBean("sportImpl", Sport.class);
