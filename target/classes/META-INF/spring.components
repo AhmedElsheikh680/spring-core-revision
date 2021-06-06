@@ -4,3 +4,7 @@ cm.spring.annotation.SportImpl=org.springframework.stereotype.Component
 cm.spring.annotation.Student=org.springframework.stereotype.Component
 cm.spring.annotation.User=org.springframework.stereotype.Component
 cm.spring.lifecycle.Admin=org.springframework.stereotype.Component
+cm.spring.noxml.Football=org.springframework.stereotype.Component
+cm.spring.noxml.MasterImpl=org.springframework.stereotype.Component
+cm.spring.noxml.SportImpl=org.springframework.stereotype.Component
+cm.spring.noxml.SpringConfiguration=org.springframework.stereotype.Component
