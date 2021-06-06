@@ -13,6 +13,8 @@
 
     <bean id="myUser" class="cm.spring.di.UserImpl">
         <property name="person" ref="myPerson"></property>
+        <property name="email" value="a@a.com"></property>
+        <property name="team" value="ICBC"></property>
     </bean>
     <bean id="myPerson" class="cm.spring.di.PersonImpl"/>
 

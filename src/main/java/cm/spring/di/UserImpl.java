@@ -3,8 +3,25 @@ package cm.spring.di;
 public class UserImpl implements User {
 
     private Person person;
+    private String email;
+    private String team;
 
-//    public UserImpl( Person person){
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+    //    public UserImpl( Person person){
 //        this.person = person;
 //    }
 
